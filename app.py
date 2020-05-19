@@ -5,6 +5,9 @@ from spacy_summarization import text_summarizer
 from gensim.summarization import summarize
 from nltk_summarization import nltk_summarizer
 import time
+import spacy
+import en_core_web_sm
+nlp = en_core_web_sm.load()
 
 app = Flask(__name__)
 
